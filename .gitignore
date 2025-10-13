@@ -1,1 +1,23 @@
+# distribution / packaging
+.Python
+build/
+downloads/
+
+
+# virtual environments
+env/
 venv/
+ENV*/
+.venv*/
+.env*/
+
+
+# Jupyter notebooks and checkpoints
+*.ipynb
+.ipynb_checkpoints/
+
+
+# editor project files
+.idea/
+.vscode/
+
