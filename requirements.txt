@@ -1,0 +1,7 @@
+# Core Libraries
+jupyterlab
+pandas
+
+# Data Source Libraries
+sec-edgar-downloader
+datasets
