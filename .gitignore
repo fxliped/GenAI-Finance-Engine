@@ -1,23 +1,35 @@
-# distribution / packaging
-.Python
-build/
-downloads/
-
-
-# virtual environments
-env/
+# Python virtual environment
 venv/
-ENV*/
-.venv*/
-.env*/
+.venv/
 
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Jupyter notebooks and checkpoints
-*.ipynb
-.ipynb_checkpoints/
-
-
-# editor project files
-.idea/
+# IDE files (e.g., VSCode)
 .vscode/
+.idea/
+
+# Secrets
+.env
+
+# Log files
+logs/
+*.log
+
+# Large Data Files (Highly Recommended - GitHub has limits)
+# Decide if you want to track these. If they get large, don't.
+sec-edgar-filings/
+stock_data/
+news_data/
+sentiment_data/
+models/
+
+# Vector Database Files (Definitely Ignore)
+chroma_db/
+
+# OS-specific files (e.g., macOS)
+.DS_Store
 

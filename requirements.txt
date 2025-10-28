@@ -1,7 +1,39 @@
-# Core Libraries
-jupyterlab
-pandas
+# Core Data Handling & Scraping
+pandas==2.1.4
+numpy<2
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==5.1.0
+yfinance==0.2.37
+newsapi-python==0.2.7
 
-# Data Source Libraries
-sec-edgar-downloader
-datasets
+# Machine Learning (PyTorch & Transformers for Sentiment/Embeddings)
+torch==2.2.2
+transformers==4.40.2
+sentence-transformers==2.7.0
+scikit-learn # Needed by train_lstm.py
+
+# Vector Database
+chromadb==0.4.24
+
+# LangChain (Specific compatible versions)
+langchain==0.1.20
+langchain-core==0.1.52
+langchain-community==0.0.38
+langchain-openai==0.1.7
+langchain-text-splitters==0.0.1
+# Note: langchain-agents is included within langchain==0.1.20
+
+# API Framework & Server
+fastapi>=0.95.2 # Allow slightly newer fastapi
+uvicorn[standard]>=0.18.3 # Use standard for better async
+python-dotenv>=1.0.0 # For loading .env files
+aiofiles # Often needed by FastAPI/Uvicorn for async file operations
+
+# Streamlit (Optional, if were to keep streamlit_app.py)
+streamlit>=1.20.0
+
+# Other utilities often needed implicitly
+aiohttp<4 # Required by older langchain
+typing-extensions 
+
